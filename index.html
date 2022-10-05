@@ -71,7 +71,22 @@
           <h1 class="hero-header-class">
             Ефективні рішення для вашого бізнесу
           </h1>
-          <button type="button" class="try-button">Замовити послугу</button>
+
+          <!-- МОДАЛКА НАЧАЛО -->
+          <button data-modal-open type="button" class="try-button">Замовити послугу</button>
+
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <!-- НАПОЛНЕНИЕ МОДАЛКИ -->
+                <button data-modal-close class="close-try-button">
+                  <svg class="icon-modalcls" width="30" height="30">
+                    <use href="./img/svg/icons.svg#icon-modalcls"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+      
+          <!-- МОДАЛКА КОНЕЦ -->
         </div>
       </section>
       <!--Друга секція "наші переваги"-->
@@ -138,29 +153,44 @@
         <div class="conteiner">
           <h2 class="text-portfolio-mail">Чим ми займаємося</h2>
           <ul class="menu-portfolio">
-            <li>
-              <img
+            <li class="menu-portfolio-list">
+              <div class="menu-portfolio-box">
+                <img
                 src="./img/Portfolio/coding.jpg"
                 alt="розробка"
                 width="370"
                 height="294"
               />
+                <h3 class="portfolio-options">
+                  Десктопні додатки
+                </h3>
+              </div>
             </li>
-            <li>
-              <img
+            <li class="menu-portfolio-list">
+              <div class="menu-portfolio-box">
+                <img
                 src="./img/Portfolio/mobile.jpg"
                 alt="мобіліті"
                 width="370"
                 height="294"
               />
+                <h3 class="portfolio-options">
+                  Мобільні додатки
+                </h3>
+                </div>
             </li>
-            <li>
-              <img
+            <li class="menu-portfolio-list">
+              <div class="menu-portfolio-box">
+                <img
                 src="./img/Portfolio/graphic.jpg"
                 alt="графіка"
                 width="370"
                 height="294"
               />
+                <h3 class="portfolio-options">
+                  Дизайнерські рішення
+                </h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -465,5 +495,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
