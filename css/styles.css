@@ -749,7 +749,7 @@ overflow: hidden;
 }
 
 .close-try-button {
-  /* position */
+/* position */
   position: absolute;
   display: flex;
   align-items: center;
@@ -757,7 +757,7 @@ overflow: hidden;
   top: 8px;
   right: 8px;
   border-radius: 50%;
-  /* design */
+/* design */
   width: 30px;
   height: 30px;
   background-color: transparent;
