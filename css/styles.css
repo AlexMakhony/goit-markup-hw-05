@@ -132,12 +132,13 @@ img {
   color: var(--brand-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:focus,
 .menu-link:hover {
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .menu-link.current::after {
@@ -150,15 +151,9 @@ img {
   width: 100%;
   height: 4px;
   background-color: var(--blue-color);
-  opacity: 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.menu-link.current:hover::after {
   opacity: 1;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 
 .current {
@@ -189,13 +184,13 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--gray-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link-phone-mail:focus,
 .contacts-link-phone-mail:hover,
 .nav-icon:hover,
 .nav-icon :focus{
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Перша секція "замовити послугу"*/
 
@@ -247,13 +242,13 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* outline: 2px solid tomato; */
 }
 .try-button:hover,
 .try-button:focus {
   background: var(--try-button-focus);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 /*Друга секція "наші переваги"*/
 
@@ -284,12 +279,13 @@ img {
   height: 120px;
   background-color: var(--section-second);
   border-radius: 4px;
+  transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-bests:focus,
 .icon-bests:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .bests-list:not(:last-child) {
@@ -392,12 +388,13 @@ img {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-push:hover,
 .social-link-push:focus {
   background-color: var(--blue-color);
   color: var(--white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links {
   fill: currentColor;
@@ -406,7 +403,7 @@ img {
 .social-links:hover,
 .social-links:focus {
   fill: var(--white-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .team-name {
@@ -470,22 +467,23 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   box-sizing: border-box;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .logo-clients {
   fill: var(--fill-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients:hover,
 .link-clients:focus {
   border-color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-clients:hover .logo-clients,
 .link-clients:focus .logo-clients {
   fill: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Далі йдемо до підвалу */
@@ -507,6 +505,7 @@ img {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-links:not(:last-child) {
   margin-bottom: 9px;
@@ -517,7 +516,7 @@ img {
 .footer-contact-link:focus,
 .footer-contact-link:hover {
   color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .logo-studio-footer {
   color: var(--white-color);
@@ -572,12 +571,12 @@ img {
   height: 100%;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .right-link:hover,
 .right-link:focus {
   background-color: var(--blue-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .right-icon {
@@ -611,6 +610,10 @@ img {
   color: var(--button-portfolio-color);
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .button-portfolio:focus,
 .button-portfolio:hover {
@@ -619,7 +622,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .last {
   margin-right: 0;
@@ -641,7 +644,7 @@ img {
 
 .link-blocks {
   display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -649,7 +652,6 @@ img {
 .link-blocks:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------Overlay START----------- */
@@ -719,8 +721,7 @@ overflow: hidden;
   visibility: hidden;
   opacity: 0;
   transform: translateY(1.5);
-  transition: transform 500ms;
- 
+  transition: opacity 250ms, visibility 250ms;
 }
 
 
@@ -734,6 +735,7 @@ overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: opacity 250ms, visibility 250ms;
+  z-index: 1;
 }
 
 .modal {
@@ -746,6 +748,11 @@ overflow: hidden;
   height: 581px; 
   background-color:var(--white-color);
   border-radius: 4px; 
+}
+
+.backdrop.is-hidden .modal {
+  transform: scale(1.5);
+  transition: transform 250ms;
 }
 
 .close-try-button {
